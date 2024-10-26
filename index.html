@@ -419,7 +419,7 @@
                 <img src="images/social.png" alt="Social Image" loading="lazy">
               </a>
             </div>
-            <div class="button-container">
+            <div class="button-container-call">
               <a href="tel://8 (938) 117-79-11" class="rounded-button">
                 ПОЗВОНИТЬ
               </a>
@@ -427,11 +427,35 @@
           </div>
         </div>
       </div>
+      <div class="adress">
+        <p class="geo-adress"><a href="https://yandex.ru/maps/org/tsentr_yarosti_oblom/147303220168">
+          г.РнД, пр. Буденновский, д. 81</a></p> 
+      </div>
     </div>
   </div>
 
+<script>
+  window.addEventListener('scroll', function() {
+    const aboutSection = document.getElementById('fh5co-about');
+    const callButton = document.getElementById('call-button');
+    
+    const rect = aboutSection.getBoundingClientRect();
+    
+    // Проверяем, находится ли блок в пределах видимости
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        callButton.classList.add('show');
+    } else {
+        callButton.classList.remove('show');
+    }
+});
 
+</script>
   <div id="fh5co-about" class="fh5co-section">
+
+    <div id="call-button" class="call-button" style="display: none;">
+      <a href="tel:+1234567890">В</a>
+    </div>
+  
     <div id="about" class="container_1"
       style="background-image: url('images/photo_12_2024-04-28_16-20-58_result.webp');">
 

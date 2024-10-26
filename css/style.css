@@ -254,7 +254,7 @@ html {
 }
 @media (max-width: 767px) {
 	.center-text {
-		margin-top: 70px;
+		margin-top: 0px;
 	}
 }
 
@@ -1796,6 +1796,7 @@ h2:hover {
 }
 @media (max-width: 768px) {
 	.social-image {
+		display: none;
 		position: absolute;
 		top: 20px;
 		left: 10px;
@@ -1803,6 +1804,11 @@ h2:hover {
 
 	.social-image img {
 		max-width: 60%;
+	}
+
+	.ftco-cover-1 {
+		height: 700px;
+		min-height: 600px;
 	}
 }
 
@@ -2392,7 +2398,8 @@ h2:hover {
 	.button-container {
 		display: flex;
 		justify-content: center;
-		margin-top: 140px;
+		margin-top: 70px;
+		z-index: 1000;
 	}
 }
 
@@ -3016,7 +3023,7 @@ h2:hover {
 @media (max-width: 767px) {
 	.rounded-button {
 		font-size: 20px;
-		margin-bottom: 80px;
+		margin-bottom: -40px;
 		padding: 2px 20px; /* Отступы */
 	}
 }
@@ -3459,3 +3466,30 @@ h2:hover {
 .price1, .kol-vo, .time1 {
 	line-height: 28px;
 }
+
+.geo-adress {
+	font-size: 16px;
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	font-weight: 400;
+	font-family: 'Bahnschrift';
+}
+
+.geo-adress a {
+	color: white;
+}
+@media (min-width: 768px) {
+	.geo-adress {
+		display: none;
+	}
+}
+.button-container-call {
+	margin-top: -340px;
+}
+.fixed {
+	position: fixed;
+	top: 10px; /* Отступ от верхней части */
+	left: 10px; /* Отступ от левой части */
+  }
+  
