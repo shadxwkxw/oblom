@@ -1693,7 +1693,6 @@ h2:hover {
 
 .ftco-blocks-cover-1 .ftco-service-image-1 {
 	margin-top: -70px;
-	position: static;
 }
 .ftco-cover-1 {
 	background-size: cover;
@@ -1704,6 +1703,13 @@ h2:hover {
 .ftco-cover-1 .container > .row {
 	height: 900px;
 	min-height: 600px;
+}
+@media (max-width: 768px) {
+	.ftco-cover-1,
+	.ftco-cover-1 .container > .row {
+		height: 700px;
+		min-height: 600px;
+}
 }
 .ftco-cover-1 > .container {
 	position: relative;
@@ -3485,11 +3491,67 @@ h2:hover {
 	}
 }
 .button-container-call {
-	margin-top: -340px;
+	margin-top: 0px;
+}
+@media (max-width: 768px) {
+	.button-container-call {
+		margin-top: 0px;
+	}
+}
+.call-button {
+	display: none;
+}
+@media (max-width: 768px) {
+	.call-button {
+		display: block;
+		top: 10px; /* фиксирует элемент в верхней части */
+		left: 10px; /* фиксирует элемент слева */
+		z-index: 1000; /* чтобы элемент был поверх других */
+		width: max-content;
+		position: absolute;
+		background-color: #ff6b00;
+		border: 2px solid whitesmoke;
+		border-radius: 20px;
+		padding: 5px;
+	}
+	
+	.call-button img {
+		width: 50px; /* или другой размер, который вам нужен */
+		height: auto; /* чтобы сохранить пропорции изображения */
+	}
+	
+	.call-button a {
+		display: flex;
+		width: 50px;
+		height: 50px;
+	}
 }
 .fixed {
 	position: fixed;
-	top: 10px; /* Отступ от верхней части */
-	left: 10px; /* Отступ от левой части */
-  }
-  
+	z-index: 99;
+	top: 10px;
+	left: 10px;
+}
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    margin: 20px 5px 50px 5px;
+}
+
+.atmosphere-photos {
+    width: 300px; 
+    height: 420px;
+    margin: 10px; 
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+/* Медиа-запрос для экранов шириной до 768px (например, для мобильных устройств) */
+@media (max-width: 768px) {
+    .atmosphere-photos {
+        width: calc(33.33% - 20px); /* Устанавливаем ширину для трех изображений в строке с учетом отступов */
+        height: 150px; /* Автоматическая высота, чтобы сохранить пропорции */
+		margin: 5px;
+    }
+}

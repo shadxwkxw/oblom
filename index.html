@@ -434,31 +434,61 @@
     </div>
   </div>
 
-<script>
-  window.addEventListener('scroll', function() {
-    const aboutSection = document.getElementById('fh5co-about');
-    const callButton = document.getElementById('call-button');
-    
-    const rect = aboutSection.getBoundingClientRect();
-    
-    // Проверяем, находится ли блок в пределах видимости
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        callButton.classList.add('show');
-    } else {
-        callButton.classList.remove('show');
-    }
-});
+  <div id="fh5co-about" class="fh5co-section">  
 
-</script>
-  <div id="fh5co-about" class="fh5co-section">
-
-    <div id="call-button" class="call-button" style="display: none;">
-      <a href="tel:+1234567890">В</a>
-    </div>
-  
     <div id="about" class="container_1"
       style="background-image: url('images/photo_12_2024-04-28_16-20-58_result.webp');">
+      <div class="call-button">
+        <a href="tel:+79381177911">
+            <img src="images/phone.png" width="10%" loading="lazy">
+        </a>
+      </div>
+      <!--
+      <script>
 
+        $(document).ready(function() {
+      
+          var element = $(".call-button");
+          var height_el = element.offset().top;
+          var element_stop = $(".container_2");
+          var height_el_stop = element_stop.offset().top;
+              
+          $(window).scroll(function() {
+                
+            if($(window).scrollTop() > height_el_stop - 200) {
+              
+              element.css({
+                "top": element.offset().top,
+                "left": element.offset().left
+              }).removeClass("fixed").addClass("absolute");
+       
+            } else {
+              if($(window).scrollTop() > height_el) {      
+                element.addClass("fixed").removeClass("absolute").attr("style", "");     
+              } else {        
+                element.removeClass("fixed absolute").attr("style", "");  
+              }   
+            }
+          });
+        });
+      </script>
+      -->
+      <script>
+
+        $(document).ready(function() {
+      
+          var element = $(".call-button");
+          var height_el = element.offset().top;
+      
+          $(window).scroll(function() {
+            if($(window).scrollTop() > height_el) {   
+              element.addClass("fixed");
+            } else {     
+              element.removeClass("fixed");
+            }  
+          });
+        });
+      </script>
       <div class="img-wrap animate-box">
         <img src="images/photo_3_2024-04-28_16-20-58_result.webp" class="image_1" width="100%" loading="lazy">
       </div>
@@ -1579,11 +1609,21 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
       </div>
+
+      <div class="photo-gallery">
+          <img src="images/photo1.webp" class="atmosphere-photos" loading="lazy">
+          <img src="images/photo2.webp" class="atmosphere-photos" loading="lazy">
+          <img src="images/photo3.webp" class="atmosphere-photos" loading="lazy">
+          <img src="images/photo4.webp" class="atmosphere-photos" loading="lazy">
+          <img src="images/photo5.webp" class="atmosphere-photos" loading="lazy">
+      </div>
+
       <div class="button-container">
         <a href="https://www.youtube.com/@rage_center_obLOM" class="button-block">
           <p>БОЛЬШЕ ВИДЕО</p>
         </a>
       </div>
+
     </div>
   </div>
 
