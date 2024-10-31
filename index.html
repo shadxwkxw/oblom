@@ -440,41 +440,10 @@
       style="background-image: url('images/photo_12_2024-04-28_16-20-58_result.webp');">
       <div class="call-button">
         <a href="tel:+79381177911">
-            <img src="images/phone.png" width="10%" loading="lazy">
+            <img src="images/phone.png" width="10%" loading="lazy" style="transform: rotate(180deg);">
         </a>
       </div>
-      <!--
       <script>
-
-        $(document).ready(function() {
-      
-          var element = $(".call-button");
-          var height_el = element.offset().top;
-          var element_stop = $(".container_2");
-          var height_el_stop = element_stop.offset().top;
-              
-          $(window).scroll(function() {
-                
-            if($(window).scrollTop() > height_el_stop - 200) {
-              
-              element.css({
-                "top": element.offset().top,
-                "left": element.offset().left
-              }).removeClass("fixed").addClass("absolute");
-       
-            } else {
-              if($(window).scrollTop() > height_el) {      
-                element.addClass("fixed").removeClass("absolute").attr("style", "");     
-              } else {        
-                element.removeClass("fixed absolute").attr("style", "");  
-              }   
-            }
-          });
-        });
-      </script>
-      -->
-      <script>
-
         $(document).ready(function() {
       
           var element = $(".call-button");
@@ -1501,10 +1470,10 @@
               <p class="additional-item-price">+150 Р</p>
             </div>
             <div class="additional-item" data-name="Изделия из гипса" data-price="700">
-              <img src="images/кассета.png" alt="Item 3" class="img-fluid img-desctop" style="margin-bottom: 10px; " loading="lazy">
+              <img src="images/gips.png" alt="Item 3" class="img-fluid img-desctop" style="margin-bottom: 10px; padding: 5px" loading="lazy">
               <div class="item-info">
-                <p class="additional-item-number">x10</p>
-                <p class="additional-item-price">+700 Р</p>
+                <p class="additional-item-number" style="padding-top: 6px; padding-left: 5px;">x10</p>
+                <p class="additional-item-price" style="padding-top: 6px; padding-right: 5px;">+700 Р</p>
               </div>
             </div>
             <div class="additional-item" data-name="Принтер" data-price="800">
@@ -1512,9 +1481,9 @@
               <p class="additional-item-price">+800 Р</p>
             </div>
             <div class="additional-item" data-name="Монитор" data-price="800">
-              <img src="images/телевизор.png" alt="Item 5" class="img-fluid img-desctop televizor"
-                style="margin-bottom: 10px;" loading="lazy">
-              <p class="additional-item-price">+800 Р</p>
+              <img src="images/monitor.png" alt="Item 5" class="img-fluid img-desctop televizor"
+                style="margin-bottom: 10px; padding: 5px;" loading="lazy">
+              <p class="additional-item-price" style="padding-top: 7px;">+800 Р</p>
             </div>
             <div class="additional-item" data-name="Телевизор" data-price="1000">
               <img src="images/телевизор.png" alt="Item 6" class="img-fluid img-desctop televizor"
@@ -1524,13 +1493,13 @@
             <div class="additional-item" data-name="Бутылки" data-price="400">
               <img src="images/бутылка.png" alt="Item 7" class="img-fluid img-desctop" style="margin-bottom: 10px; " loading="lazy">
               <div class="item-info">
-                <p class="additional-item-number">x10</p>
-                <p class="additional-item-price">+400 Р</p>
+                <p class="additional-item-number" style=" padding-left: 5px;">x10</p>
+                <p class="additional-item-price" style=" padding-right: 5px;">+400 Р</p>
               </div>
             </div>
             <div class="additional-item" data-name="Сканер" data-price="800">
-              <img src="images/стул.png" alt="Item 8" class="img-fluid img-desctop" style="margin-bottom: 10px; " loading="lazy">
-              <p class="additional-item-price">+800 Р</p>
+              <img src="images/scaner.png" alt="Item 8" class="img-fluid img-desctop" style="margin-bottom: 10px; padding: 5px" loading="lazy">
+              <p class="additional-item-price" style="padding-top: 7px;">+800 Р</p>
             </div>
             <div class="additional-item" data-name="Стул" data-price="700">
               <img src="images/стул.png" alt="Item 9" class="img-fluid img-desctop" style="margin-bottom: 10px; " loading="lazy">
@@ -1543,14 +1512,14 @@
             <div class="additional-item" data-name="Тарелки" data-price="700">
               <img src="images/тарелка.png" alt="Item 11" class="img-fluid img-desctop" style="margin-bottom: 10px; " loading="lazy">
               <div class="item-info">
-                <p class="additional-item-number">x10</p>
-                <p class="additional-item-price">+700 Р</p>
+                <p class="additional-item-number" style=" padding-left: 5px;">x10</p>
+                <p class="additional-item-price" style=" padding-right: 5px;">+700 Р</p>
               </div>
             </div>
-            <div class="additional-item" data-name="Съемка на GO PRO" data-price="400">
-              <img src="images/тарелка.png" alt="Item 12" class="img-fluid img-desctop" style="margin-bottom: 10px; " loading="lazy">
-              <div class="item-info">
-                <p class="additional-item-price">+400 Р</p>
+            <div class="additional-item" data-name="Съемка на GO PRO" data-price="400" style="padding-top: 6px;">
+              <img src="images/gopro.png" alt="Item 12" class="img-fluid img-desctop" style="margin-bottom: 10px; padding: 5px" loading="lazy">
+              <div class="item-info" style="display: flex; justify-content: center;">
+                <p class="additional-item-price" style="padding-top: 1px;">+400 Р</p>
               </div>
             </div>
           </div>
@@ -1610,6 +1579,51 @@
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
       </div>
 
+      <div class="container_4">
+        <div class="nav-arrows">
+          <img src="images/left.png" class="prev" alt="Left Arrow" loading="lazy">
+          <img src="images/right.png" class="next" alt="Right Arrow" loading="lazy">
+        </div>
+        <div class="row row_2 align-items-stretch">
+          <div class="col-lg-3 col-md-6 mb-5">
+            <div class="post-entry-2 h-100">
+              <a>
+                <img src="images/photo1.webp" alt="Image" class="img-fluid img-fluid-2 atmosphere-photos" loading="lazy" style="height: 420px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <div class="post-entry-2 h-100">
+              <a>
+                <img src="images/photo2.webp" alt="Image" class="img-fluid img-fluid-2 atmosphere-photos" loading="lazy" style="height: 420px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <div class="post-entry-2 h-100">
+              <a>
+                <img src="images/photo3.webp" alt="Image" class="img-fluid img-fluid-2 atmosphere-photos" loading="lazy" style="height: 420px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <div class="post-entry-2 h-100">
+              <a>
+                <img src="images/photo4.webp" alt="Image" class="img-fluid img-fluid-2 atmosphere-photos" loading="lazy" style="height: 420px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <div class="post-entry-2 h-100">
+              <a>
+                <img src="images/photo5.webp" alt="Image" class="img-fluid img-fluid-2 atmosphere-photos" loading="lazy" style="height: 420px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
       <div class="photo-gallery">
           <img src="images/photo1.webp" class="atmosphere-photos" loading="lazy">
           <img src="images/photo2.webp" class="atmosphere-photos" loading="lazy">
@@ -1617,7 +1631,7 @@
           <img src="images/photo4.webp" class="atmosphere-photos" loading="lazy">
           <img src="images/photo5.webp" class="atmosphere-photos" loading="lazy">
       </div>
-
+      -->
       <div class="button-container">
         <a href="https://www.youtube.com/@rage_center_obLOM" class="button-block">
           <p>БОЛЬШЕ ВИДЕО</p>

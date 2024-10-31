@@ -2404,7 +2404,7 @@ h2:hover {
 	.button-container {
 		display: flex;
 		justify-content: center;
-		margin-top: 70px;
+		/*margin-top: 70px;*/
 		z-index: 1000;
 	}
 }
@@ -3037,24 +3037,22 @@ h2:hover {
 	position: relative;
 }
 
-/* Стили для кнопки "Забронировать" */
 .book-now {
 	display: inline-block;
 	padding: 8px 16px;
 	background: linear-gradient(to right, #ff6b00, #994000);
-	color: #fff; /* Цвет текста кнопки */
+	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 400;
 	border: 1px solid white;
 	border-radius: 30px;
 	cursor: pointer;
-	margin-top: 10px; /* Отступ сверху */
+	margin-top: 10px;
 }
 
-/* Стили при наведении на кнопку */
 .book-now:hover {
-	background-color: #a1ec0b; /* Цвет фона при наведении */
+	background-color: #a1ec0b;
 }
 
 .site-footer {
@@ -3242,7 +3240,7 @@ h2:hover {
 
 .modal-content-x {
 	padding: 20px;
-	border-radius: 10px; /* Скругленные углы */
+	border-radius: 10px;
 	max-width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
@@ -3292,7 +3290,7 @@ h2:hover {
 
 	.modal-content-x {
 		padding: 20px;
-		border-radius: 10px; /* Скругленные углы */
+		border-radius: 10px;
 		max-width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -3504,20 +3502,21 @@ h2:hover {
 @media (max-width: 768px) {
 	.call-button {
 		display: block;
-		top: 10px; /* фиксирует элемент в верхней части */
-		left: 10px; /* фиксирует элемент слева */
-		z-index: 1000; /* чтобы элемент был поверх других */
+		top: 10px;
+		left: 10px;
+		z-index: 1000;
 		width: max-content;
 		position: absolute;
 		background-color: #ff6b00;
 		border: 2px solid whitesmoke;
-		border-radius: 20px;
+		border-radius: 30px;
 		padding: 5px;
 	}
 	
 	.call-button img {
-		width: 50px; /* или другой размер, который вам нужен */
-		height: auto; /* чтобы сохранить пропорции изображения */
+		width: 50px; 
+		height: auto;
+		padding: 3px;
 	}
 	
 	.call-button a {
@@ -3535,7 +3534,7 @@ h2:hover {
 .photo-gallery {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    flex-wrap: wrap;
     margin: 20px 5px 50px 5px;
 }
 
@@ -3547,11 +3546,17 @@ h2:hover {
     border-radius: 10px;
 }
 
-/* Медиа-запрос для экранов шириной до 768px (например, для мобильных устройств) */
 @media (max-width: 768px) {
     .atmosphere-photos {
-        width: calc(33.33% - 20px); /* Устанавливаем ширину для трех изображений в строке с учетом отступов */
-        height: 150px; /* Автоматическая высота, чтобы сохранить пропорции */
+        height: 150px;
 		margin: 5px;
     }
+}
+.img-fluid-1 {
+	width: 300px; 
+}
+@media (max-width: 768px) {
+	.img-fluid-2 {
+		height: 420px;
+	}
 }
